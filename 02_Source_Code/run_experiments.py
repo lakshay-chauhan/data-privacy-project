@@ -1,6 +1,6 @@
 """
 run_experiments.py - reproduces every number reported in Sections 13-17 of the report.
-Usage:  python run_experiments.py   (writes ../results/results.json and CSV files)
+Usage:  python run_experiments.py   (writes ../03_Datasets/results.json and ../03_Datasets/results_summary_E1.csv)
 All datasets are bundled with scikit-learn (no download needed).
 """
 import json, os, time, math, platform, sys
@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from fl_core import *
 
-OUT = os.path.join(os.path.dirname(__file__), "..", "results")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "03_Datasets")
 os.makedirs(OUT, exist_ok=True)
 SEEDS = [0, 1, 2]
 R, E, B = 20, 1, 16          # rounds, local epochs, batch size
@@ -209,4 +209,11 @@ print("explain rho", results["E6_explain"]["rho_fedavg_central"], results["E6_ex
 
 with open(os.path.join(OUT, "results.json"), "w") as f:
     json.dump(results, f, indent=1)
+# flat summary of experiment E1 (one row per dataset and system)
+with open(os.path.join(OUT, "results_summary_E1.csv"), "w") as f:
+    f.write("dataset,system,acc_mean,acc_std,f1_mean,eps_worst_client,mia_auc,min_client_acc,comm_bytes,round_time_s\n")
+    for ds, ms in e1.items():
+        for m, v in ms.items():
+            f.write(",".join(str(x) for x in [ds, m, v["acc"][0], v["acc"][1], v["f1"][0], v["eps"], v["mia"][0],
+                                              v["min_client"][0], v["comm"][0], v["round_time"][0]]) + "\n")
 print("saved", flush=True)

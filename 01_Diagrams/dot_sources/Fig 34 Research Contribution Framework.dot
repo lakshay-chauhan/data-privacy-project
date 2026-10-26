@@ -1,4 +1,4 @@
-digraph G { graph [fontname="Liberation Sans", fontsize=9, bgcolor="white", pad=0.04, nodesep=0.035, ranksep=0.25, compound=true, size="3.45,8.2", splines=true]; node [shape=box, style="rounded,filled", fontname="Liberation Sans", fontsize=8.5, fillcolor="#EAF1FB", color="#2F6DB5", penwidth=0.8, margin="0.07,0.035"]; edge [color="#4B5563", arrowsize=0.6, penwidth=0.8, fontname="Liberation Sans", fontsize=7.5]; rankdir=LR;
+digraph G { graph [fontname="Arial", fontsize=9, bgcolor="white", pad=0.04, nodesep=0.035, ranksep=0.25, compound=true, size="3.45,8.2", splines=true]; node [shape=box, style="rounded,filled", fontname="Arial", fontsize=8.5, fillcolor="#EAF1FB", color="#2F6DB5", penwidth=0.8, margin="0.07,0.035"]; edge [color="#4B5563", arrowsize=0.6, penwidth=0.8, fontname="Arial", fontsize=7.5]; rankdir=LR;
 root [label="Contributions", fillcolor="#1F2937", fontcolor="white", color="#1F2937"];
 g0 [label="C1 Architecture", fillcolor="#EAF1FB", color="#2F6DB5", margin="0.06,0.025"];
 root -> g0 [arrowsize=0.4];

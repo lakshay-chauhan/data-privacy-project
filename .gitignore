@@ -20,3 +20,7 @@ $RECYCLE.BIN/
 *.swp
 *~
 *.tmp
+
+# Old output folders (outputs now go to 01_Diagrams and 03_Datasets)
+results/
+diagrams/

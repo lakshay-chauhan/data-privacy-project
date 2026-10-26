@@ -1,5 +1,5 @@
 """
-make_figures.py - generates every figure at 600 dpi from results/results.json.
+make_figures.py - generates every figure at 600 dpi from 03_Datasets/results.json into 01_Diagrams/.
 Diagrams are produced with Graphviz (DOT sources are also saved so they can be re-drawn in draw.io).
 """
 import json, os, subprocess, math, shutil
@@ -10,10 +10,11 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 
 BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-RES = json.load(open(os.path.join(BASE, "results", "results.json")))
-EXTRA = json.load(open(os.path.join(BASE, "results", "extra_robustness.json")))
-FIG = os.path.join(BASE, "diagrams"); os.makedirs(FIG, exist_ok=True)
-DOT = os.path.join(BASE, "diagrams", "dot_sources"); os.makedirs(DOT, exist_ok=True)
+DATA = os.path.join(BASE, "03_Datasets")
+RES = json.load(open(os.path.join(DATA, "results.json")))
+EXTRA = json.load(open(os.path.join(DATA, "extra_robustness.json")))
+FIG = os.path.join(BASE, "01_Diagrams"); os.makedirs(FIG, exist_ok=True)
+DOT = os.path.join(BASE, "01_Diagrams", "dot_sources"); os.makedirs(DOT, exist_ok=True)
 FONT = "Arial"
 plt.rcParams.update({"font.family": "sans-serif", "font.sans-serif": ["Arial", "DejaVu Sans", "Helvetica", "sans-serif"],
                      "font.size": 7.5, "axes.titlesize": 8, "axes.labelsize": 7.5,
@@ -525,8 +526,15 @@ for a, (k, v) in zip(ax, imp.items()):
     a.set_title(name + "\n\u03c1 vs centralised = " + rho_str, pad=3, fontsize=7)
 fig.tight_layout(); save(fig, 35, "Pixel Importance Maps under Privacy")
 
-json.dump(DER, open(os.path.join(BASE, "results", "derived.json"), "w"), indent=1, default=float)
-json.dump({str(k): v for k, v in NAMES.items()}, open(os.path.join(BASE, "results", "figure_index.json"), "w"), indent=1)
+json.dump(DER, open(os.path.join(DATA, "derived.json"), "w"), indent=1, default=float)
+# record figure paths relative to the repository root (portable across machines)
+json.dump({str(k): [t, os.path.relpath(p, BASE).replace(os.sep, "/")] for k, (t, p) in NAMES.items()},
+          open(os.path.join(DATA, "figure_index.json"), "w"), indent=1)
+# stamp 600 dpi resolution metadata on every PNG (Graphviz renders at 600 dpi but does not always record it)
+from PIL import Image
+for _t, _p in NAMES.values():
+    with Image.open(_p) as _im:
+        _im.load(); _im.save(_p, dpi=(600, 600))
 print("figures:", len(NAMES))
 print(json.dumps({k: DER[k] for k in ("latency_at_10mbps_ms", "throughput_at_10mbps", "latency_at_1mbps_ms", "offload_tau07", "trust")}, indent=1))
 print(json.dumps({k: v for k, v in DER["biz"].items() if k != "B0"}, indent=1))

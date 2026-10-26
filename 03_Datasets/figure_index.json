@@ -1,142 +1,142 @@
 {
  "1": [
   "Evolution of Cloud-Edge Analytics Architectures",
-  "/home/claude/project/code/../diagrams/Fig 01 Evolution of Cloud-Edge Analytics Architectures.png"
+  "01_Diagrams/Fig 01 Evolution of Cloud-Edge Analytics Architectures.png"
  ],
  "2": [
   "Distributed Data Science Ecosystem Overview",
-  "/home/claude/project/code/../diagrams/Fig 02 Distributed Data Science Ecosystem Overview.png"
+  "01_Diagrams/Fig 02 Distributed Data Science Ecosystem Overview.png"
  ],
  "3": [
   "Privacy Challenges in Cloud-Edge Data Science Systems",
-  "/home/claude/project/code/../diagrams/Fig 03 Privacy Challenges in Cloud-Edge Data Science Systems.png"
+  "01_Diagrams/Fig 03 Privacy Challenges in Cloud-Edge Data Science Systems.png"
  ],
  "4": [
   "Literature Taxonomy Framework",
-  "/home/claude/project/code/../diagrams/Fig 04 Literature Taxonomy Framework.png"
+  "01_Diagrams/Fig 04 Literature Taxonomy Framework.png"
  ],
  "5": [
   "Requirements Engineering Framework",
-  "/home/claude/project/code/../diagrams/Fig 05 Requirements Engineering Framework.png"
+  "01_Diagrams/Fig 05 Requirements Engineering Framework.png"
  ],
  "6": [
   "Privacy-Aware Cloud-Edge Intelligence Architecture for Distributed Data Science",
-  "/home/claude/project/code/../diagrams/Fig 06 Privacy-Aware Cloud-Edge Intelligence Architecture for Distributed Data Science.png"
+  "01_Diagrams/Fig 06 Privacy-Aware Cloud-Edge Intelligence Architecture for Distributed Data Science.png"
  ],
  "7": [
   "Multi-Layer Architectural View",
-  "/home/claude/project/code/../diagrams/Fig 07 Multi-Layer Architectural View.png"
+  "01_Diagrams/Fig 07 Multi-Layer Architectural View.png"
  ],
  "8": [
   "Edge Data Acquisition Framework",
-  "/home/claude/project/code/../diagrams/Fig 08 Edge Data Acquisition Framework.png"
+  "01_Diagrams/Fig 08 Edge Data Acquisition Framework.png"
  ],
  "9": [
   "Edge Intelligence Processing Pipeline",
-  "/home/claude/project/code/../diagrams/Fig 09 Edge Intelligence Processing Pipeline.png"
+  "01_Diagrams/Fig 09 Edge Intelligence Processing Pipeline.png"
  ],
  "10": [
   "Distributed Data Engineering Workflow",
-  "/home/claude/project/code/../diagrams/Fig 10 Distributed Data Engineering Workflow.png"
+  "01_Diagrams/Fig 10 Distributed Data Engineering Workflow.png"
  ],
  "11": [
   "Edge-to-Cloud Data Flow Architecture",
-  "/home/claude/project/code/../diagrams/Fig 11 Edge-to-Cloud Data Flow Architecture.png"
+  "01_Diagrams/Fig 11 Edge-to-Cloud Data Flow Architecture.png"
  ],
  "12": [
   "Privacy Preservation Framework",
-  "/home/claude/project/code/../diagrams/Fig 12 Privacy Preservation Framework.png"
+  "01_Diagrams/Fig 12 Privacy Preservation Framework.png"
  ],
  "13": [
   "Secure Communication and Storage Architecture",
-  "/home/claude/project/code/../diagrams/Fig 13 Secure Communication and Storage Architecture.png"
+  "01_Diagrams/Fig 13 Secure Communication and Storage Architecture.png"
  ],
  "14": [
   "Federated Analytics Architecture",
-  "/home/claude/project/code/../diagrams/Fig 14 Federated Analytics Architecture.png"
+  "01_Diagrams/Fig 14 Federated Analytics Architecture.png"
  ],
  "15": [
   "Federated Learning Workflow",
-  "/home/claude/project/code/../diagrams/Fig 15 Federated Learning Workflow.png"
+  "01_Diagrams/Fig 15 Federated Learning Workflow.png"
  ],
  "16": [
   "Cloud Analytics Framework",
-  "/home/claude/project/code/../diagrams/Fig 16 Cloud Analytics Framework.png"
+  "01_Diagrams/Fig 16 Cloud Analytics Framework.png"
  ],
  "17": [
   "AI-Powered Intelligence Pipeline",
-  "/home/claude/project/code/../diagrams/Fig 17 AI-Powered Intelligence Pipeline.png"
+  "01_Diagrams/Fig 17 AI-Powered Intelligence Pipeline.png"
  ],
  "18": [
   "Explainability and Trust Framework",
-  "/home/claude/project/code/../diagrams/Fig 18 Explainability and Trust Framework.png"
+  "01_Diagrams/Fig 18 Explainability and Trust Framework.png"
  ],
  "19": [
   "Decision Intelligence Architecture",
-  "/home/claude/project/code/../diagrams/Fig 19 Decision Intelligence Architecture.png"
+  "01_Diagrams/Fig 19 Decision Intelligence Architecture.png"
  ],
  "20": [
   "Governance and Compliance Architecture",
-  "/home/claude/project/code/../diagrams/Fig 20 Governance and Compliance Architecture.png"
+  "01_Diagrams/Fig 20 Governance and Compliance Architecture.png"
  ],
  "21": [
   "Experimental Testbed Architecture",
-  "/home/claude/project/code/../diagrams/Fig 21 Experimental Testbed Architecture.png"
+  "01_Diagrams/Fig 21 Experimental Testbed Architecture.png"
  ],
  "22": [
   "Evaluation Framework",
-  "/home/claude/project/code/../diagrams/Fig 22 Evaluation Framework.png"
+  "01_Diagrams/Fig 22 Evaluation Framework.png"
  ],
  "27": [
   "Security and Reliability Framework",
-  "/home/claude/project/code/../diagrams/Fig 27 Security and Reliability Framework.png"
+  "01_Diagrams/Fig 27 Security and Reliability Framework.png"
  ],
  "28": [
   "Smart City Cloud-Edge Ecosystem",
-  "/home/claude/project/code/../diagrams/Fig 28 Smart City Cloud-Edge Ecosystem.png"
+  "01_Diagrams/Fig 28 Smart City Cloud-Edge Ecosystem.png"
  ],
  "29": [
   "Healthcare Edge Intelligence Framework",
-  "/home/claude/project/code/../diagrams/Fig 29 Healthcare Edge Intelligence Framework.png"
+  "01_Diagrams/Fig 29 Healthcare Edge Intelligence Framework.png"
  ],
  "31": [
   "Challenges and Limitations Roadmap",
-  "/home/claude/project/code/../diagrams/Fig 31 Challenges and Limitations Roadmap.png"
+  "01_Diagrams/Fig 31 Challenges and Limitations Roadmap.png"
  ],
  "32": [
   "Future Research Roadmap",
-  "/home/claude/project/code/../diagrams/Fig 32 Future Research Roadmap.png"
+  "01_Diagrams/Fig 32 Future Research Roadmap.png"
  ],
  "33": [
   "Next-Generation Cloud-Edge Intelligence Ecosystem",
-  "/home/claude/project/code/../diagrams/Fig 33 Next-Generation Cloud-Edge Intelligence Ecosystem.png"
+  "01_Diagrams/Fig 33 Next-Generation Cloud-Edge Intelligence Ecosystem.png"
  ],
  "34": [
   "Research Contribution Framework",
-  "/home/claude/project/code/../diagrams/Fig 34 Research Contribution Framework.png"
+  "01_Diagrams/Fig 34 Research Contribution Framework.png"
  ],
  "23": [
   "Privacy Preservation Performance Analysis",
-  "/home/claude/project/code/../diagrams/Fig 23 Privacy Preservation Performance Analysis.png"
+  "01_Diagrams/Fig 23 Privacy Preservation Performance Analysis.png"
  ],
  "24": [
   "Latency and Throughput Evaluation",
-  "/home/claude/project/code/../diagrams/Fig 24 Latency and Throughput Evaluation.png"
+  "01_Diagrams/Fig 24 Latency and Throughput Evaluation.png"
  ],
  "25": [
   "Trustworthiness Assessment Results",
-  "/home/claude/project/code/../diagrams/Fig 25 Trustworthiness Assessment Results.png"
+  "01_Diagrams/Fig 25 Trustworthiness Assessment Results.png"
  ],
  "26": [
   "Comparative Radar Chart",
-  "/home/claude/project/code/../diagrams/Fig 26 Comparative Radar Chart.png"
+  "01_Diagrams/Fig 26 Comparative Radar Chart.png"
  ],
  "30": [
   "Business Impact Dashboard",
-  "/home/claude/project/code/../diagrams/Fig 30 Business Impact Dashboard.png"
+  "01_Diagrams/Fig 30 Business Impact Dashboard.png"
  ],
  "35": [
   "Pixel Importance Maps under Privacy",
-  "/home/claude/project/code/../diagrams/Fig 35 Pixel Importance Maps under Privacy.png"
+  "01_Diagrams/Fig 35 Pixel Importance Maps under Privacy.png"
  ]
 }

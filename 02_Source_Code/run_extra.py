@@ -1,6 +1,6 @@
 """run_extra.py - robustness of centralised and local-only baselines under 20% label-flipped clients (for trust score)."""
 import json, os, numpy as np
-os.makedirs(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "results"), exist_ok=True)
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "03_Datasets"); os.makedirs(OUT, exist_ok=True)
 from sklearn.datasets import load_digits
 from sklearn.model_selection import train_test_split
 from fl_core import *
@@ -22,4 +22,4 @@ for s in [0,1,2]:
             accs.append(accuracy(Wk,Zte,yte))
         out["local_"+tag].append(float(np.mean(accs)))
 out={k:[float(np.mean(v)),float(np.std(v))] for k,v in out.items()}
-json.dump(out,open("../results/extra_robustness.json","w"),indent=1); print(out)
+json.dump(out,open(os.path.join(OUT,"extra_robustness.json"),"w"),indent=1); print(out)
