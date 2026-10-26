@@ -1,0 +1,14 @@
+digraph G { graph [fontname="Liberation Sans", fontsize=9, bgcolor="white", pad=0.04, nodesep=0.14, ranksep=0.2, compound=true, size="3.45,8.2", splines=true]; node [shape=box, style="rounded,filled", fontname="Liberation Sans", fontsize=8.5, fillcolor="#EAF1FB", color="#2F6DB5", penwidth=0.8, margin="0.07,0.035"]; edge [color="#4B5563", arrowsize=0.6, penwidth=0.8, fontname="Liberation Sans", fontsize=7.5]; rankdir=TB;
+n0 [label="Sensors and IoT devices", fillcolor="#EAF1FB", color="#2F6DB5"];
+n1 [label="Gateway: protocol translation
+(MQTT, CoAP, HTTP)", fillcolor="#FDF0E6", color="#E07B39"];
+n2 [label="Quality checks and
+local filtering", fillcolor="#E9F6EF", color="#3A9D6E"];
+n3 [label="Minimisation and
+pseudonymisation", fillcolor="#F2EAF8", color="#8E5BB5"];
+n4 [label="Local buffer / edge store", fillcolor="#F3F4F6", color="#6B7280"];
+n0 -> n1;
+n1 -> n2;
+n2 -> n3;
+n3 -> n4;
+}

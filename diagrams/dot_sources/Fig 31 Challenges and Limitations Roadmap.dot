@@ -1,0 +1,16 @@
+digraph G { graph [fontname="Arial", fontsize=9, bgcolor="white", pad=0.04, nodesep=0.14, ranksep=0.2, compound=true, size="3.45,8.2", splines=true]; node [shape=box, style="rounded,filled", fontname="Arial", fontsize=8.5, fillcolor="#EAF1FB", color="#2F6DB5", penwidth=0.8, margin="0.07,0.035"]; edge [color="#4B5563", arrowsize=0.6, penwidth=0.8, fontname="Arial", fontsize=7.5]; rankdir=TB;
+n0 [label="Edge resource limits
+-> compression, TinyML", fillcolor="#EAF1FB", color="#2F6DB5"];
+n1 [label="Communication overhead
+-> sparsification, fewer rounds", fillcolor="#FDF0E6", color="#E07B39"];
+n2 [label="Privacy-utility trade-off
+-> tuned noise, better accounting", fillcolor="#E9F6EF", color="#3A9D6E"];
+n3 [label="Non-IID data and fairness
+-> personalisation", fillcolor="#F2EAF8", color="#8E5BB5"];
+n4 [label="Deployment and governance
+-> policy-as-code, MLOps", fillcolor="#F3F4F6", color="#6B7280"];
+n0 -> n1;
+n1 -> n2;
+n2 -> n3;
+n3 -> n4;
+}

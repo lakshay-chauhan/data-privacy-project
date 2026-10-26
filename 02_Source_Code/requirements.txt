@@ -1,0 +1,5 @@
+numpy
+scipy
+scikit-learn
+matplotlib
+# Graphviz 'dot' binary is needed only for make_figures.py

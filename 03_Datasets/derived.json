@@ -1,0 +1,104 @@
+{
+ "latency_at_10mbps_ms": {
+  "cloud": 105.27799242735547,
+  "edge": 40.0,
+  "hybrid": 54.453462037113134
+ },
+ "throughput_at_10mbps": {
+  "cloud": 19.53125,
+  "edge": 25.0,
+  "hybrid": 25.0
+ },
+ "latency_at_1mbps_ms": {
+  "cloud": 566.0000000000001,
+  "hybrid": 65.71555555555555
+ },
+ "offload_tau07": 0.24444444444444444,
+ "pillars": {
+  "Centralised cloud": {
+   "Utility": 0.9703703703703704,
+   "Minimisation": 0.0,
+   "Formal_privacy": 0.0,
+   "Fairness": 0.9383272616879174,
+   "Robustness": 0.7245355541319666,
+   "Comm_efficiency": 1.0
+  },
+  "Local-only edge": {
+   "Utility": 0.6364197530864198,
+   "Minimisation": 1.0,
+   "Formal_privacy": 1.0,
+   "Fairness": 0.8320531370473591,
+   "Robustness": 0.8051851851851851,
+   "Comm_efficiency": 1.0
+  },
+  "FedAvg": {
+   "Utility": 0.9228395061728395,
+   "Minimisation": 1.0,
+   "Formal_privacy": 0.0,
+   "Fairness": 0.8496512427546911,
+   "Robustness": 0.8804780876494024,
+   "Comm_efficiency": 0.0782568093385214
+  },
+  "DP-FedAvg + SecAgg": {
+   "Utility": 0.8617283950617285,
+   "Minimisation": 1.0,
+   "Formal_privacy": 0.3080188316187619,
+   "Fairness": 0.7575305984462751,
+   "Robustness": 0.8260558339298495,
+   "Comm_efficiency": 0.0782568093385214
+  }
+ },
+ "trust": {
+  "Centralised cloud": {
+   "Equal": 0.6055388643650423,
+   "Privacy-weighted": 0.4980686148441422,
+   "Utility-weighted": 0.7390590520026122
+  },
+  "Local-only edge": {
+   "Equal": 0.8789430125531607,
+   "Privacy-weighted": 0.8994460544454768,
+   "Utility-weighted": 0.8183326619151287
+  },
+  "FedAvg": {
+   "Equal": 0.621870940985909,
+   "Privacy-weighted": 0.5672012847495836,
+   "Utility-weighted": 0.6942517481218862
+  },
+  "DP-FedAvg + SecAgg": {
+   "Equal": 0.6385984113991894,
+   "Privacy-weighted": 0.6176639234988329,
+   "Utility-weighted": 0.6816833076906781
+  }
+ },
+ "biz": {
+  "B0": {
+   "cloud": {
+    "network": 35644.53125,
+    "storage": 98378.90625,
+    "edge": 0,
+    "gov": 0,
+    "risk": 60000.0
+   },
+   "hybrid": {
+    "network": 1125.217013888889,
+    "storage": 2404.817708333333,
+    "edge": 120000.0,
+    "gov": 25000.0,
+    "risk": 1466.6666666666667
+   },
+   "exposure": 0.024444444444444446,
+   "raw_gb": 712890.625,
+   "off_gb": 17426.215277777777,
+   "fl_gb": 5078.125
+  },
+  "cloud_total": 194023.4375,
+  "hybrid_total": 149996.70138888888,
+  "saving": 44026.736111111124,
+  "saving_pct": 22.691452475225383,
+  "incremental_invest": 145000.0,
+  "roi": 0.30363266283524903,
+  "net_benefit_ratio": 0.30363266283524915,
+  "exposure": 0.024444444444444446,
+  "break_even_pb_at_2M": 0.007446323161580791
+ }
+}
